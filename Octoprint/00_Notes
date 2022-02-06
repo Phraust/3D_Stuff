@@ -21,4 +21,6 @@ M300 S660 P250
 M300 S880 P300
 M117 Bed mesh levels completed ; send message to printer display
 
-- TP-Link Smartplug
+- TP-Link Smartplug Control
+
+- OctoPrint-UICustomizer
