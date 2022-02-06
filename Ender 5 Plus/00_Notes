@@ -4,9 +4,22 @@ M500    Save EEPROM contents
 M503    Output EEPROM contents
 
 
-Filter to remove temp callouts from the terminal:
+Formula for determining E steps:
 
-(Send: (N\d+\s+)?M105)|(Recv:  == T:.*$)
+  1. Remove bowden tupe at extruder.
+  2. Make three extrusions of 100mm, measure with calipers, and find average.  This is A.
+  3. Do the math below.
+
+  A = Measured Extrusion (set for 100mm)
+  B = Ratio of difference
+  C = Old M92 E Value
+  D= New M92 E Value
+
+  100 / A = B
+  B * C = D
+
+  4. Enter new E Steps value with M92.
+  5. Save to EEPROM with M500.
 
 
 Current M503 output:
