@@ -30,7 +30,7 @@ Recv: echo:Filament settings: Disabled
 Recv: echo:  M200 D1.75
 Recv: echo:  M200 D0
 Recv: echo:Steps per unit:
-Recv: echo:  M92 X80.00 Y80.00 Z800.00 E92.60
+Recv: echo:  M92 X80.00 Y80.00 Z800.00 E95.1
 Recv: echo:Maximum feedrates (units/s):
 Recv: echo:  M203 X500.00 Y500.00 Z10.00 E50.00
 Recv: echo:Maximum Acceleration (units/s2):
