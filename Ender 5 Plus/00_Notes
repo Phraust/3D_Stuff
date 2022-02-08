@@ -4,6 +4,17 @@ M500    Save EEPROM contents
 M503    Output EEPROM contents
 
 
+PID Tuning:
+
+  Current PID Settings (M301):
+  M301 P14.72 I0.89 D61.22
+
+  1. Note current PID Settings above.
+  2. Send: M303 E0 S200 C3
+  3. Set new PID Settings with M301.
+  4. Save to EEPROM with M500.
+
+
 Formula for determining E steps:
 
   1. Remove bowden tupe at extruder.
