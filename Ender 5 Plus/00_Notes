@@ -22,6 +22,18 @@ Formula for determining E steps:
   5. Save to EEPROM with M500.
 
 
+Calculate Optimal Flow Rate
+  *To be done after E Steps are calibrated
+
+  Print STL for Nozzle diameter (0.8mm)
+
+  A = Expected Measurement (1.6mm for 0.8mm nozzle)
+  B = Measured average of 4 sides.
+  F = Current Flowrate (100)
+
+  (A/B)*F = New Flowrate
+
+
 Current M503 output:
 
 Recv: echo:  G21    ; Units in mm
