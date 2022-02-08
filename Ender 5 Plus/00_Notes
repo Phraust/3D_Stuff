@@ -78,7 +78,7 @@ Recv: echo:  M420 S1 Z2.00
 Recv: echo:PID settings:
 Recv: echo:  M301 P22.59 I1.72 D74.03
 Recv: echo:Z-Probe Offset (mm):
-Recv: echo:  M851 Z-1.80
+Recv: echo:  M851 Z-1.63
 Recv: ok
 [...]
 
