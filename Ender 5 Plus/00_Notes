@@ -14,6 +14,11 @@ PID Tuning:
   3. Set new PID Settings with M301.
   4. Save to EEPROM with M500.
 
+Recv: #define  DEFAULT_Kp 22.59
+Recv: #define  DEFAULT_Ki 1.72
+Recv: #define  DEFAULT_Kd 74.03
+
+M301 P22.59 I1.72 D74.03
 
 Formula for determining E steps:
 
