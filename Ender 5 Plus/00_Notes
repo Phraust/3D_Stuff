@@ -1,26 +1,36 @@
+Marlin Ver 1.70.1 BL
+
 Common Commands:
 
+M115    Firmware Info
 M500    Save EEPROM contents
 M503    Output EEPROM contents
 
 
-PID Tuning:
+==============
+= PID Tuning =
+==============
 
-  Current PID Settings (M301):
+  Current Extruder PID Settings (M301):
   M301 P14.72 I0.89 D61.22
 
   1. Note current PID Settings above.
   2. Send: M303 E0 S200 C3
+  
+  Recv: #define  DEFAULT_Kp 22.59
+  Recv: #define  DEFAULT_Ki 1.72
+  Recv: #define  DEFAULT_Kd 74.03 
+  
   3. Set new PID Settings with M301.
+  
+  M301 P22.59 I1.72 D74.03
+  
   4. Save to EEPROM with M500.
 
-Recv: #define  DEFAULT_Kp 22.59
-Recv: #define  DEFAULT_Ki 1.72
-Recv: #define  DEFAULT_Kd 74.03
 
-M301 P22.59 I1.72 D74.03
-
-Formula for determining E steps:
+===================================
+= Formula for determining E steps =
+===================================
 
   1. Remove bowden tupe at extruder.
   2. Make three extrusions of 100mm, measure with calipers, and find average.  This is A.
@@ -38,7 +48,10 @@ Formula for determining E steps:
   5. Save to EEPROM with M500.
 
 
-Calculate Optimal Flow Rate
+===============================
+= Calculate Optimal Flow Rate =
+===============================
+
   *To be done after E Steps are calibrated
 
   Print STL for Nozzle diameter (0.8mm)
@@ -52,7 +65,9 @@ Calculate Optimal Flow Rate
   02/22 = 96.3855
 
 
-Current M503 output:
+=======================
+= Current M503 output =
+=======================
 
 Send: M503
 Recv: echo:  G21    ; Units in mm
@@ -78,7 +93,4 @@ Recv: echo:  M420 S1 Z2.00
 Recv: echo:PID settings:
 Recv: echo:  M301 P22.59 I1.72 D74.03
 Recv: echo:Z-Probe Offset (mm):
-Recv: echo:  M851 Z-1.63
-Recv: ok
-[...]
-
+Recv: echo:  M851 Z-1.65
