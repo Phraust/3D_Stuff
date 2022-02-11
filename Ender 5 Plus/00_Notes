@@ -39,7 +39,7 @@ M503    Output EEPROM contents
   A = Measured Extrusion (set for 100mm)
   B = Ratio of difference
   C = Old M92 E Value
-  D= New M92 E Value
+  D = New M92 E Value
 
   100 / A = B
   B * C = D
