@@ -32,7 +32,7 @@ M503    Output EEPROM contents
 = Formula for determining E steps =
 ===================================
 
-  1. Remove bowden tupe at extruder.
+  1. Remove bowden tube at extruder.
   2. Make three extrusions of 100mm, measure with calipers, and find average.  This is A.
   3. Do the math below.
 
